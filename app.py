@@ -76,7 +76,7 @@ if not os.path.exists(HISTORY_FOLDER):
     os.makedirs(HISTORY_FOLDER)
 
 # 解決 SSL 證書驗證問題
-os.environ['SSL_CERT_FILE'] = certifi.where()
+# os.environ['SSL_CERT_FILE'] = certifi.where()
 
 app = Flask(__name__)
 
